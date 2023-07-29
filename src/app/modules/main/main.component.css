@@ -1,0 +1,94 @@
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu-tabs {
+  margin-top: 0.35em;
+  width: 90%;
+}
+
+
+::ng-deep #menu-tabs .dx-item.dx-tab {
+  background-color: rgba(185, 183, 183, 0);
+  color: #FFFFFF;
+  display: inline-block;
+}
+
+::ng-deep #menu-tabs .dx-tab-selected:after {
+  border-right: none;
+  border-left: none;
+}
+
+::ng-deep #menu-tabs .dx-item.dx-tab.dx-tab-selected {
+  border-left: none;
+  border-right: none;
+}
+
+::ng-deep #menu-tabs .dx-item.dx-tab.dx-tab-selected .dx-tab-text {
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+::ng-deep #menu-tabs .dx-tab.dx-state-focused:after {
+  border: none;
+}
+
+::ng-deep #menu-tabs .dx-tab .dx-tab-content {
+  padding-bottom: 4px;
+  border-bottom: 0.2em solid transparent;
+}
+
+::ng-deep #menu-tabs .dx-tab-selected .dx-tab-content p {
+  padding-bottom: 4px;
+  border-bottom: 0.2em solid #98CD71
+}
+
+::ng-deep #menu-tabs .dx-item.dx-tab .dx-badge {
+  background-color: #FFFFFF;
+  color: #026845;
+  font-weight: bolder;
+}
+
+
+::ng-deep #menu-tabs .dx-tabs {
+  border: none;
+  border-color: none;
+  margin: auto;
+}
+
+::ng-deep #menu-tabs .dx-tabs-scrollable .dx-tabs-wrapper {
+  border: none;
+}
+
+::ng-deep #menu-tabs .dx-button-mode-contained .dx-icon {
+  color: #FFFFFF
+}
+
+::ng-deep #menu-tabs .dx-tabs-nav-button {
+  background: linear-gradient(#0B2F6E, #8BB1F5, #E2E5EA)
+}
+
+::ng-deep #menu-tabs .dx-button-mode-contained .dx-state-hover {
+  background: linear-gradient(#0B2F6E, #8BB1F5, #E2E5EA)
+}
+
+
+@media (min-width:700px) and (max-width:1200px) {
+  #menu-tabs {
+    width: 70%;
+  }
+}
+
+@media (max-width:700px) {
+  #menu-tabs {
+    width: 60%;
+  }
+
+  .welcome-text {
+    font-size: 0.8em;
+    margin-top: 1.5em;
+  }
+}

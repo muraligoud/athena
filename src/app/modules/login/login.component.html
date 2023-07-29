@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Login</h2>
+  <dx-form [formData]="loginFormData" (onFieldDataChanged)="onFieldDataChanged($event)">
+    <dxi-item dataField="username" editorType="dxTextBox" [editorOptions]="{ placeholder: 'Username' }"></dxi-item>
+    <dxi-item dataField="password" editorType="dxTextBox"
+      [editorOptions]="{ placeholder: 'Password', mode: 'password' }"></dxi-item>
+    <dxi-item>
+      <dx-button text="Login" (onClick)="onLoginClick()"></dx-button>
+    </dxi-item>
+  </dx-form>
+</div>

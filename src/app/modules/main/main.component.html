@@ -1,0 +1,11 @@
+<div class="main-container">
+  <div id="menu-tabs">
+    <dx-tabs [dataSource]="mainTabs" [selectedIndex]="selectedTabIndex" (onItemClick)="onTabSelection($event)"
+      class="tabs-margin">
+    </dx-tabs>
+  </div>
+
+  <dx-button text="Logout" (onClick)="onLogoutClick()"></dx-button>
+
+</div>
+<router-outlet></router-outlet>
